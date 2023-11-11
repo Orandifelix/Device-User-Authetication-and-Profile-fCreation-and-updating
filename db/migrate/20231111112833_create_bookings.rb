@@ -7,7 +7,7 @@ class CreateBookings < ActiveRecord::Migration[7.0]
       t.string :destinationAddress
       t.string :propertyType
       t.integer :bedrooms
-      t.text :services
+      t.text :services, array: true, default: []
       t.integer :crewSize
       t.string :vehicleSize
       t.text :instructions

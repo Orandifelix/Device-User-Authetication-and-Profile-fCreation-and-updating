@@ -1,6 +1,6 @@
 class User < ApplicationRecord
   has_one :profile, dependent: :destroy
-  has_many :bookings, dependent: :destroy
+  has_many :bookings 
   before_create :create_profile_with_attributes
 
   devise :database_authenticatable, :registerable,
