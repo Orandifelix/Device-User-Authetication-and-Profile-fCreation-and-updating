@@ -21,7 +21,8 @@ class User < ApplicationRecord
       fb: nil,
       linkedin: nil,
       twitter: nil,
-      age: nil
+      age: nil,
+      # user_id: self.id     #Set user_id to be the same as user's id
     ).save
   end
 end
